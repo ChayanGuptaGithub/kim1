@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Koushiki</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Nabla&display=swap');
+        *{
+    padding: 0px;
+    margin: 0px;
+    text-decoration:none;
+    font-family:Dancing script;
+    font-weight:bold ;
+    box-sizing:border-box;
+}
+.container {
+    border:50px groove grey;
+    height:100%;
+background-image: linear-gradient(
+  170deg,
+  hsl(0deg 0% 0%) 0%,
+  hsl(56deg 0% 5%) 9%,
+  hsl(56deg 0% 10%) 18%,
+  hsl(56deg 1% 15%) 26%,
+  hsl(56deg 1% 20%) 33%,
+  hsl(56deg 1% 25%) 40%,
+  hsl(56deg 1% 30%) 46%,
+  hsl(56deg 2% 35%) 53%,
+  hsl(56deg 2% 40%) 58%,
+  hsl(56deg 2% 45%) 64%,
+  hsl(56deg 2% 50%) 69%,
+  hsl(56deg 3% 55%) 74%,
+  hsl(56deg 4% 60%) 79%,
+  hsl(56deg 6% 65%) 84%,
+  hsl(56deg 8% 70%) 89%,
+  hsl(56deg 11% 74%) 94%,
+  hsl(56deg 15% 79%) 100%
+);
+    
+}
+.img{
+    width:100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    
+}
+.pic2{
+    width:600px;
+    height:800px ;
+    border:14px inset white;
+    margin:50px auto;
+    background-position: auto;
+}
+.more{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;  
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 50px;
+  color: #818181;
+  display: block;
+  transition: 0.8s;
+}
+.sidenav a:hover {
+  color: red;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 66px;
+  margin-left: 50px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.title-word {
+  animation: color-animation 2s linear infinite;
+  font-size:60px;
+  word-spacing:60px;
+}
+
+.title-word-1 {
+  --color-1: #55ff82;
+  --color-2: #ff407e;
+  --color-3: #4740ff;
+  
+}
+
+.title-word-2 {
+  --color-1: #ff4040;
+  --color-2: #e355ff;
+  --color-3: #31ff15;
+}
+.abt {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 8.5vw;
+  text-transform: uppercase;
+}
+
+@keyframes color-animation {
+  0%    {color: var(--color-1)}
+  32%   {color: var(--color-1)}
+  33%   {color: var(--color-2)}
+  65%   {color: var(--color-2)}
+  66%   {color: var(--color-3)}
+  99%   {color: var(--color-3)}
+  100%  {color: var(--color-1)}
+}
+.title-ani {
+  display: grid;
+  place-items: center;  
+  text-align: center;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title-ani">
+  <h2 class="abt">
+    <span class="title-word title-word-1">My</span>
+    <span class="title-word title-word-2">Photo</span>
+    <span class="title-word title-word-1">Gallery</span>
+    </h2>
+</div>
+        <section class="img">
+            <img src="pic2.jpg" alt="CG" class="pic2">
+            <img src="pic3.jpg" alt="CG" class="pic2">
+            <img src="pic4.jpg" alt="CG" class="pic2">
+            <img src="pic5.jpg" alt="CG" class="pic2">
+            <img src="pic6.jpg" alt="CG" class="pic2">
+            <img src="pic7.jpg" alt="CG" class="pic2">
+            <img src="pic8.jpg" alt="CG" class="pic2">
+        </section>
+        
+        <section class="more">
+<span style="font-size:80px;cursor:pointer;color: white" onclick="openNav()">&#9776; More Options</span>    
+</section>
+</div>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+  <a href="my_pictures.html">Photographer</a>
+  <a href="artist.html">Artist</a>
+  <a href="social.html">Social</a>
+</div>
+        <audio autoplay src="song2.mp3"></audio>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>koushiki</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+    padding: 0px;
+    margin: 0px;
+    text-decoration:none;
+    font-family:Dancing script;
+    font-weight:bold ;
+    box-sizing:border-box;
+}
+.container {
+width:100vw;
+height:100vh;
+    border:50px groove grey;
+background-image: linear-gradient(
+  170deg,
+  hsl(0deg 0% 0%) 0%,
+  hsl(56deg 0% 5%) 9%,
+  hsl(56deg 0% 10%) 18%,
+  hsl(56deg 1% 15%) 26%,
+  hsl(56deg 1% 20%) 33%,
+  hsl(56deg 1% 25%) 40%,
+  hsl(56deg 1% 30%) 46%,
+  hsl(56deg 2% 35%) 53%,
+  hsl(56deg 2% 40%) 58%,
+  hsl(56deg 2% 45%) 64%,
+  hsl(56deg 2% 50%) 69%,
+  hsl(56deg 3% 55%) 74%,
+  hsl(56deg 4% 60%) 79%,
+  hsl(56deg 6% 65%) 84%,
+  hsl(56deg 8% 70%) 89%,
+  hsl(56deg 11% 74%) 94%,
+  hsl(56deg 15% 79%) 100%
+);
+    
+}
+.img{
+    width:100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    
+}
+.pic2{
+    width:100px;
+    height:100px ;
+    border:14px inset white;
+    border-radius: 50%;
+    margin:40px auto;
+    background-position: auto;
+}
+.title-word {
+  animation: color-animation 2s linear infinite;
+  font-size:30px;
+  word-spacing:60px;
+}
+
+.title-word-1 {
+  --color-1: #55ff82;
+  --color-2: #ff407e;
+  --color-3: #4740ff;
+  
+}
+
+.title-word-2 {
+  --color-1: #DBAD4A;
+  --color-2: #ACCFCB;
+  --color-3: #17494D;
+}
+
+@keyframes color-animation {
+  0%    {color: var(--color-1)}
+  32%   {color: var(--color-1)}
+  33%   {color: var(--color-2)}
+  65%   {color: var(--color-2)}
+  66%   {color: var(--color-3)}
+  99%   {color: var(--color-3)}
+  100%  {color: var(--color-1)}
+}
+.title-ani {
+  display: grid;
+  place-items: center;  
+  text-align: center;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 50px;
+  color: #818181;
+  display: block;
+  transition: 0.8s;
+}
+.sidenav a:hover {
+  color: red;
+}
+.more span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+font-size: 2px;
+text-transform: uppercase;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 66px;
+  margin-left: 50px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title-ani">
+  <h2 class="abt">
+    <span class="title-word title-word-1">Social</span>
+    <span class="title-word title-word-2">Accounts</span>
+    </h2>
+</div>
+        <section class="img">
+         
+            
+       <a href="https://wa.me/9064714668"><img src="what.png" alt="CG" class="pic2"></a>
+       
+       <a href="mailto:meekoushiki@gmail.com"><img src="mail.png" alt="CG" class="pic2"></a>
+       
+       <a href="https://instagram.com/koushikighosh_?igshid=YmMyMTA2M2Y="><img src="insta.jpg" alt="CG" class="pic2"></a>
+<span style="font-size:25px;cursor:pointer;color: white" onclick="openNav()">&#9776; More Options</span>    
+</section>
+</div>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+  <a href="my_pictures.html">Gallery</a>
+  <a href="artist.html">Artist</a>
+  <a href="social.html">Social</a>
+</div>
+    </div>
+   
+</body>
+<script src="script.js"></script>
+</html>
